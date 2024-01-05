@@ -11,7 +11,7 @@
 
 	<!-- Chemin vers Feuille de style -->
         <link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="./replace_style.css">
+	
 </head>
 
 <body>
@@ -73,6 +73,9 @@
 		}
 		// Récupère le modèle
 		const divExistante = document.getElementById('model-case'); // Remplacer 'model-case' par l'ID de votre div existante
+		// Ajout classe bleue 
+		divExistante.classList.add('blue');
+
 		// Crée une div pour chaque étudiant et l'ajoute au DOM avec une couleur de fond aléatoire
 		etudiants.forEach((etudiant, index) => {
 			// Crée une copie de la div existante
